@@ -104,7 +104,6 @@ This will:
 - train the model
 - save figures
 - write a PDF report
-- save a zip bundle of outputs
 
 ## Notes
 
