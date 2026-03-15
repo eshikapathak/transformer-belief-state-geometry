@@ -1,0 +1,5 @@
+Honor-code preregistration before inspecting post-training figures:
+1) Because the global process is a non-ergodic mixture of 3 Mess3 components, the full 9-state belief should factor as b=(q1*eta1,q2*eta2,q3*eta3).
+2) Early context positions should mainly encode q, with strong overlap between components near the prior q=(1/3,1/3,1/3).
+3) Later positions should separate by component; within high-confidence branches, one should recover component-specific Mess3 geometry.
+4) A possible alternative is that final layers encode mostly q, with fine within-component structure pushed to earlier layers.
