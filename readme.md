@@ -1,8 +1,8 @@
 # Non-Ergodic Mess3 Geometry Experiment
 
-This repo studies a simple synthetic setting where a transformer is trained on a **non-ergodic mixture of Mess3 processes** and then analyzed through the geometry of its residual stream.
+This repo studies a simple synthetic setting where a transformer is trained on a non-ergodic mixture of Mess3 processes and then analyzed through the geometry of its residual stream.
 
-The main goal is to understand whether the model’s internal representations reflect the **true Bayesian belief geometry** of the underlying hidden process.
+The main goal is to understand whether the model’s internal representations reflect the true Bayesian belief geometry of the underlying hidden process.
 
 ## References
 
@@ -20,9 +20,9 @@ For each training sequence:
 - the whole sequence is generated from that one component
 - the component does not change within the sequence
 
-This makes the overall process **non-ergodic**.
+This makes the overall process non-ergodic.
 
-A small decoder-only transformer is then trained with **next-token prediction**.  
+A small decoder-only transformer is then trained with next-token prediction.  
 After training, we compare the transformer’s residual stream to the exact Bayesian belief states of the underlying hidden Markov model.
 
 ## Why this is interesting
@@ -125,11 +125,11 @@ The answer in this setup is broadly:
 - later positions and deeper layers make that structure clearer
 - within high-confidence component regions, some finer local hidden-state structure is also visible
 
-So the learned geometry is better described as a **mixture of belief geometries** rather than one single global shape.
+So the learned geometry is better described as a mixture of belief geometries rather than one single global shape.
 
 ## Possible extension
 
-A useful next analysis would be to compare the transformer’s next-token loss against the **exact Bayesian next-token predictor** for the same process. That would show how close the model is to the Bayes-optimal predictor, not just whether its geometry looks similar.
+A useful next analysis would be to compare the transformer’s next-token loss against the exact Bayesian next-token predictor for the same process. That would show how close the model is to the Bayes-optimal predictor, not just whether its geometry looks similar.
 
 ## Author
 
