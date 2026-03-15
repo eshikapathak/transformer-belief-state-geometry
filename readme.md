@@ -54,7 +54,6 @@ Typical outputs include:
 - `tiny_gpt_nonergodic_mess3.pt` — trained model checkpoint
 - `nonergodic_mess3_report.pdf` — PDF writeup
 - `figures/` — saved plots
-- `nonergodic_mess3_code.zip` — zipped bundle of code and outputs
 
 ## Geometry being tested
 
